@@ -37,6 +37,7 @@ header {
 
 header:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
 }
 
 .logo {
@@ -49,18 +50,21 @@ header:hover {
 }
 .logo:hover {
     transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .logo-img {
     width: 40%;
     height: auto;
     transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 .logo-text {
     font-family: 'Star Wars', sans-serif;
     font-size: 1rem;
     transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 .social-media {
@@ -69,20 +73,118 @@ header:hover {
     justify-content: center;
     gap: 10px;
     transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 .social-media i {
     font-size: 1.5rem;
     color: #fff;
     transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 i {
     font-size: 1.2rem;
     transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 i:hover {
     color: gold;
     transform: scale(1.05);
+    transition: 0.5s;
+        }
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 0 20px 0;
+}
+
+h2 {
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 40px 20px;
+    transition: 0.5s;
+}
+
+.cards {
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 5px;           
+    position: relative;
+    overflow: hidden;
+}
+
+.cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 2px rgba(218, 165, 32, 0.3);
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+.cards:hover::before {
+    opacity: 1;
+}
+
+.character-name-bg {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 0 0 8px 8px;        
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.character-name {
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.5s ease;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.8);
+}
+
+.cards:hover .character-name {
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(218, 165, 32, 1);
+    transform: scale(1.02);
+    transition: all 0.5s ease;
 }
