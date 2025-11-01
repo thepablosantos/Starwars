@@ -4,11 +4,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    color: #fff;
 }
 
-h1{
+body {
+    background-image: url('./assets/bg.jpeg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 40%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.logo-text {
     font-family: 'Star Wars', sans-serif;
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 2rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-media i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+i {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+i:hover {
+    color: gold;
+    transform: scale(1.05);
 }
