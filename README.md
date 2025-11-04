@@ -13,7 +13,7 @@ A aplicação consome dados da [SWAPI (Star Wars API)](https://swapi.dev/) e da 
 
 ## 🖼️ Preview do Projeto
 
-![Star Wars Characters Website](./assets/starwars1.jpg)
+![Star Wars Characters Website](./assets/screen.png)
 
 *Interface do projeto mostrando os cards de personagens de Star Wars*
 
