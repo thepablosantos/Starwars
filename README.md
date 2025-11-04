@@ -200,7 +200,7 @@ card.addEventListener('click', () => openCharacterModal(character));
 
 - GitHub: [@thepablosantos](https://www.github.com/thepablosantos)
 - LinkedIn: [pablo-sodre](https://www.linkedin.com/in/pablo-sodre)
-- Instagram: [@eupablosantoss](https://www.instagram.com/eupablosantoss)
+- Portfolio: [Pablo Sodré](https://www.pablosantos.xyz/ )
 
 ## 📄 Licença
 
